@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5676DFD2793E4CF003C45D0 /* Home_AnimatedSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676DFC2793E4CF003C45D0 /* Home_AnimatedSplashScreen.swift */; };
+		B5676DFF2793E549003C45D0 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676DFE2793E549003C45D0 /* SplashScreen.swift */; };
 		B5790626279283DA006C717A /* SwiftUI3_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5790625279283DA006C717A /* SwiftUI3_0App.swift */; };
 		B5790628279283DA006C717A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5790627279283DA006C717A /* ContentView.swift */; };
 		B579062A279283DC006C717A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5790629279283DC006C717A /* Assets.xcassets */; };
 		B579062D279283DC006C717A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B579062C279283DC006C717A /* Preview Assets.xcassets */; };
-		B57906352792847F006C717A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57906342792847F006C717A /* Home.swift */; };
+		B57906352792847F006C717A /* Home_3DCarouselSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57906342792847F006C717A /* Home_3DCarouselSlider.swift */; };
 		B5790637279285B0006C717A /* CarouselBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5790636279285B0006C717A /* CarouselBodyView.swift */; };
 		B579063927928952006C717A /* ScrollViewOffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B579063827928952006C717A /* ScrollViewOffsetModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5676DFC2793E4CF003C45D0 /* Home_AnimatedSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_AnimatedSplashScreen.swift; sourceTree = "<group>"; };
+		B5676DFE2793E549003C45D0 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		B5790622279283DA006C717A /* SwiftUI3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5790625279283DA006C717A /* SwiftUI3_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI3_0App.swift; sourceTree = "<group>"; };
 		B5790627279283DA006C717A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5790629279283DC006C717A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B579062C279283DC006C717A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B57906342792847F006C717A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B57906342792847F006C717A /* Home_3DCarouselSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_3DCarouselSlider.swift; sourceTree = "<group>"; };
 		B5790636279285B0006C717A /* CarouselBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselBodyView.swift; sourceTree = "<group>"; };
 		B579063827928952006C717A /* ScrollViewOffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOffsetModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,9 +81,11 @@
 		B579063327928472006C717A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B57906342792847F006C717A /* Home.swift */,
+				B57906342792847F006C717A /* Home_3DCarouselSlider.swift */,
 				B5790636279285B0006C717A /* CarouselBodyView.swift */,
 				B579063827928952006C717A /* ScrollViewOffsetModifier.swift */,
+				B5676DFC2793E4CF003C45D0 /* Home_AnimatedSplashScreen.swift */,
+				B5676DFE2793E549003C45D0 /* SplashScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,8 +162,10 @@
 			files = (
 				B5790637279285B0006C717A /* CarouselBodyView.swift in Sources */,
 				B5790628279283DA006C717A /* ContentView.swift in Sources */,
-				B57906352792847F006C717A /* Home.swift in Sources */,
+				B5676DFF2793E549003C45D0 /* SplashScreen.swift in Sources */,
+				B57906352792847F006C717A /* Home_3DCarouselSlider.swift in Sources */,
 				B5790626279283DA006C717A /* SwiftUI3_0App.swift in Sources */,
+				B5676DFD2793E4CF003C45D0 /* Home_AnimatedSplashScreen.swift in Sources */,
 				B579063927928952006C717A /* ScrollViewOffsetModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
