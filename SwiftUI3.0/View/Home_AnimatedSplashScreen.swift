@@ -26,6 +26,16 @@ struct Home_AnimatedSplashScreen: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             
+        } navButtons: {
+            Button {
+                
+            } label: {
+                Image("profile")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 35, height: 35)
+                    .clipShape(Circle())
+            }
         }
     }
 }

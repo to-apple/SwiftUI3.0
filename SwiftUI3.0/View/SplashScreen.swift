@@ -7,23 +7,26 @@
 
 import SwiftUI
 
-struct SplashScreen<Content: View, Title: View, Logo: View>: View {
+struct SplashScreen<Content: View, Title: View, Logo: View, NavButton: View>: View {
     @State private var textAnimation = false
     @State private var imageAnimation = false
     @State private var endAnimation = false
-    
+    @State private var showNavButtons = false
+
     @Namespace var animation
     
     var content: Content
     var titleView: Title
     var logoView: Logo
+    var navButton: NavButton
     var imageSize: CGSize
     
-    init(imageSize: CGSize, @ViewBuilder content: @escaping () -> Content, @ViewBuilder titleView: @escaping () -> Title, @ViewBuilder logoView: @escaping () -> Logo) {
+    init(imageSize: CGSize, @ViewBuilder content: @escaping () -> Content, @ViewBuilder titleView: @escaping () -> Title, @ViewBuilder logoView: @escaping () -> Logo, @ViewBuilder navButtons: @escaping () -> NavButton) {
         self.imageSize = imageSize
         self.content = content()
         self.titleView = titleView()
         self.logoView = logoView()
+        self.navButton = navButtons()
     }
     
     var body: some View {
@@ -43,16 +46,19 @@ struct SplashScreen<Content: View, Title: View, Logo: View>: View {
                 }
                 
                 HStack {
+                    navButton
+                        .opacity(showNavButtons ? 1 : 0)
+                    
                     Spacer()
                     
                     if endAnimation {
                         logoView
                             .matchedGeometryEffect(id: "LOGO", in: animation)
                             .frame(width: 30, height: 30)
-                            .padding(.trailing)
                             .offset(y: -5)
                     }
                 }
+                .padding(.horizontal)
             }
             .frame(height: endAnimation ? 60 : nil)
             .zIndex(1)
@@ -69,6 +75,12 @@ struct SplashScreen<Content: View, Title: View, Logo: View>: View {
                 }
                 withAnimation(Animation.interactiveSpring(response: 0.6, dampingFraction: 1, blendDuration: 1)) {
                     endAnimation.toggle()
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                    withAnimation {
+                        showNavButtons.toggle()
+                    }
                 }
             }
         }
