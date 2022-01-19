@@ -10,7 +10,7 @@ import SwiftUI
 struct Home_AnimatedSplashScreen: View {
     var body: some View {
         SplashScreen(imageSize: CGSize(width: 128, height: 128)) {
-            Image("post1")
+            Image("post")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 300, height: 300)
